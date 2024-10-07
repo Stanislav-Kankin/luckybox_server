@@ -88,9 +88,8 @@ app.add_middleware(
 @dp.message(CommandStart())
 async def start(message: Message):
     await message.answer(
-        f"<b>Привет, {message.from_user.username}!</b>\n"
         f"Чтобы открыть боксы тебе понадобиться пароль ниже.\n"
-        "<code>147.45.193.130</code>\n"
+        "<code>147.45.193.130</code> нажми на него и он скопируется!\n"
         f"🎁 Открывай свои боксы!", reply_markup=markup
         )
 
