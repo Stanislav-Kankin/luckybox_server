@@ -9,4 +9,5 @@ class User(Model):
     luckyboxes = fields.IntField(default=1)
     balance = fields.IntField(default=0)
 
+
 userpy = pydantic_model_creator(User)
